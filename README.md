@@ -1,6 +1,6 @@
 # Dev Tools
 
-A collection of scripts and tools to streamline development workflows and boost productivity.
+A collection of scripts and tools to streamline development workflows and enhance productivity.
 
 ## Overview
 
