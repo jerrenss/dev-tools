@@ -13,27 +13,27 @@ echo "✓ Added: git s -> git status"
 
 # 3. git lo - log oneline
 git config --global alias.lo "log --oneline"
-echo "✓ Added: git lo -> git log --oneline"
+echo "✓ Added: git lo"
 
 # 4. git co - checkout
 git config --global alias.co checkout
-echo "✓ Added: git co -> git checkout"
+echo "✓ Added: git co"
 
 # 5. git push - push to current branch
 git config --global alias.push "push origin HEAD"
-echo "✓ Added: git push -> git push origin HEAD"
+echo "✓ Added: git push"
 
 # 5. git po - git pull origin
 git config --global alias.po "pull origin"
-echo "✓ Added: git po -> git pull origin"
+echo "✓ Added: git po"
 
 # 6. git acm - git add all and commit with message
 git config --global alias.acm "!git add . && git commit -m"
-echo "✓ Added: git acm -> git add . && git commit -m"
+echo "✓ Added: git acm"
 
 # 7. git acmp - git add all, commit with message and push
-git config --global alias.acmp "!f() { git add . && git commit -m \"\$1\" && git push origin HEAD; }; f"
-echo "✓ Added: git acmp -> git add . && git commit -m \"\$1\" && git push origin HEAD"
+git config --global alias.acmp '!git add . && git commit -m "$1" && git push origin HEAD'
+echo "✓ Added: git acmp"
 
 echo ""
 echo "All git aliases have been set up successfully!"
