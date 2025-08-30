@@ -32,7 +32,7 @@ git config --global alias.acm "!git add . && git commit -m"
 echo "✓ Added: git acm -> git add . && git commit -m"
 
 # 7. git acmp - git add all, commit with message and push
-git config --global alias.acmp "!git add . && git commit -m \"\$1\" && git push origin HEAD"
+git config --global alias.acmp "!f() { git add . && git commit -m \"\$1\" && git push origin HEAD; }; f"
 echo "✓ Added: git acmp -> git add . && git commit -m \"\$1\" && git push origin HEAD"
 
 echo ""
